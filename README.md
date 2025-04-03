@@ -32,30 +32,17 @@ curl --location 'http://localhost:8080/api/ai/chat' \
 "emailContent": "Hi Pravin, Connecting with you regarding one of the githug project you have developed.",
 "tone": "professional"
 }'
-4. Response:
-   <think>
-   Okay, so I need to respond to this email that Pravin sent. Let me read through it again.
 
-He says, "Hi Pravin, Connecting with you regarding one of the githug project you have developed." Hmm, he's just mentioning someone and a project they're working on. He didn't ask any specific questions or want to discuss something in detail.
 
-I wonder why he wrote it like that. Maybe he wants to set up a meeting or schedule? Or perhaps he doesn't remember the exact details of the project yet. It could also be a way for him to acknowledge their interest without getting into specifics.
+### How to configure extension in developer mode
+1. Type `chrome://extensions/`in browser tab.
+2. From top right corner enable the developer mode.
+3. From top left corner click on `Load Unpacked` button and browse the extension source code.
+4. Once directory selected you should be able to see the extension on the window with title `
+   AI Email Assistant`.
+5. Go to the another tab and open GMAIL and select email on which you would to test the extension.
+6. Once email selected click on reply button you will see `AI Reply` button got added immediate before Send button.
+7. Click on `AI Reply` button(Make sure your running backend on 8080 port and CORS is enabled) backend will pass the email trail context to the deepseek model and will stream the response.
 
-Since I don't have any additional context, the best approach is to ask how I can help further. That way, I can clarify my needs and ensure we're going in the right direction.
-</think>
-
-Certainly! Here's a thoughtful response based on your query:
-
----
-
-Hi Pravin,
-
-I wanted to confirm how I can assist you with our githug project. Could you please let me know more about what you're working on or if there’s something specific you’d like discussed?
-
-Thank you for reaching out!
-
-Best regards,  
-[Your Name]
-
---- 
-
-This approach is friendly and open-ended, inviting further discussion.
+### Video
+[gmail AI assistance.mp4](gmail%20AI%20assistance.mp4)
