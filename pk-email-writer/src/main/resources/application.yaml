@@ -1,4 +1,11 @@
 spring:
   application:
     name: pk-email-writer
-
+---
+spring:
+  ai:
+    ollama:
+      chat:
+        base-url: http://localhost:11434/
+        options:
+          model: deepseek-r1:1.5b

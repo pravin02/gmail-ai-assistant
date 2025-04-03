@@ -1,4 +1,3 @@
-pk-email-writer/HELP.md
 pk-email-writer/target
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
